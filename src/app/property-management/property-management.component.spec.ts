@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PropertyManagementComponent } from './property-management.component';
 
 describe('PropertyManagementComponent', () => {

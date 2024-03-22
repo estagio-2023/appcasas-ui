@@ -1,25 +1,27 @@
 <div id="container">
-    <h3 id="page-title">Property Management</h3>
-    <section id="properties">
-        <button class="btn btn-primary" id="button-add-property" type="button"><i class="bi bi-plus"></i> Add Property</button>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Typology - City I Title
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <p><strong>Address:</strong></p>
-                    <p><strong>Postal Code:</strong></p>
-                    <p><strong>Contruction Year:</strong></p>
-                    <p><strong>Square Meters:</strong></p>
-                    <p><strong>Energetic Class:</strong></p>
-                    <button id="delete-property" type="button">Delete Property</button>
-                </div>
-              </div>
-            </div>
+  <h3 id="page-title">Property Management</h3>
+  <section id="properties">
+    <button class="btn btn-primary" id="button-add-property" type="button"
+      data-target="#exampleModal" (click)="openModal()"><i class="bi bi-plus"></i> Add Property</button>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Typology - City I Title
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <p><strong>Address:</strong></p>
+            <p><strong>Postal Code:</strong></p>
+            <p><strong>Contruction Year:</strong></p>
+            <p><strong>Square Meters:</strong></p>
+            <p><strong>Energetic Class:</strong></p>
+            <button id="delete-property" type="button">Delete Property</button>
+          </div>
         </div>
-    </section> 
+      </div>
+    </div>
+  </section>
 </div>

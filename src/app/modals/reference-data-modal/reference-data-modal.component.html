@@ -1,6 +1,6 @@
 <div class="modal d-block">
     <div class="modal-dialog">
-        <div class="modal-content position-fixed top-0 end-0" id="modal-content">
+        <div class="modal-content" id="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5">Add Reference Data</h1>
                 <button type="button" class="shadow-none btn-close" (click)="closeModal()"></button>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="mt-3">
                         <label for="description"><strong>Description:</strong></label>
-                        <input type="text" id="description" class="form-control" placeholder="Description..."
+                        <input type="text" class="form-control" placeholder="Description..."
                             formControlName="description" autocomplete="off" required>
                         <app-error-message class="error-message"
                             [control]="form.controls.description"></app-error-message>
